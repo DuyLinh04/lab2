@@ -1,0 +1,99 @@
+/* login_style.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://gcs.tripi.vn/public-tripi/tripi-feed/img/474101ZSs/anh-nen-am-nhac-2k_013828994.jpg'); /* Đường dẫn đến hình nền */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hiệu ứng Background Image Scroll */
+    z-index: -1;
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.avatar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.input-field {
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Góc bo tròn */
+    background-color: #f8f8f8; /* Màu nền */
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007bff; /* Màu viền khi được focus */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px; /* Khoảng cách giữa nội dung và viền */
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.register {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}

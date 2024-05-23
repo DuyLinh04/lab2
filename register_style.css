@@ -1,0 +1,106 @@
+/* CSS cho trang đăng kí */
+/* Đặt các style cho các phần tử khác nhau của trang đăng kí */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background styles */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://gcs.tripi.vn/public-tripi/tripi-feed/img/474101ZSs/anh-nen-am-nhac-2k_013828994.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Container styles */
+.register-container {
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar styles */
+.avatar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Form styles */
+.register-form {
+    text-align: center;
+}
+
+.register-form input {
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-form button {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Login link styles */
+.login {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+/* CSS cho hiệu ứng Shooting Star */
+.shooting-star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #463e3e;
+    border-radius: 50%;
+    animation: shooting-star-animation 3s infinite;
+}
+
+@keyframes shooting-star-animation {
+    0% {
+        transform: translateY(-200px) rotate(45deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(200px) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(400px) rotate(45deg);
+        opacity: 0;
+    }
+}
